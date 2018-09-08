@@ -4,6 +4,9 @@ from flask_restful import Api, Resource, reqparse
 app = Flask(__name__)
 api = Api(app)
 
+@app.route('/')
+def hello_world():
+    return 'Hello World!'
 
 class User(Resource):
     def post(self):
@@ -33,4 +36,4 @@ class User(Resource):
 
 
 api.add_resource(User, '/user')
-app.run(debug=True)
+app.run()
