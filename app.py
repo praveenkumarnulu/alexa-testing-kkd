@@ -38,31 +38,31 @@ def hello():
 #         }
 #         return response
 
-# @app.route('/user', methods=['POST'])
-# def post_testing():
-#     response = {
-#         "version": "1.0",
-#         "response": {
-#             "outputSpeech": {
-#                 "type": "PlainText",
-#                 "text": "Hello praveen i am here checking ait alllll",
-#
-#             },
-#             "card": {
-#                 "type": "Simple",
-#                 "title": "Testing Purpose",
-#                 "content": "Nothing much content",
-#             },
-#             "reprompt": {
-#                 "outputSpeech": {
-#                     "type": "PlainText",
-#                     "text": "Can i help you with anything else.",
-#
-#                 }
-#             },
-#         }
-#     }
-#     return jsonify(response), 201
+@app.route('/user', methods=['POST'])
+def post_testing():
+    response = {
+        "version": "1.0",
+        "response": {
+            "outputSpeech": {
+                "type": "PlainText",
+                "text": "Hello praveen i am here checking ait alllll",
+
+            },
+            "card": {
+                "type": "Simple",
+                "title": "Testing Purpose",
+                "content": "Nothing much content",
+            },
+            "reprompt": {
+                "outputSpeech": {
+                    "type": "PlainText",
+                    "text": "Can i help you with anything else.",
+
+                }
+            },
+        }
+    }
+    return jsonify(response), 201
 
 
 # api.add_resource(User, '/user')
