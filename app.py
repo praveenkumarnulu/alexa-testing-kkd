@@ -66,4 +66,5 @@ def hello():
 
 
 # api.add_resource(User, '/user')
-app.run()
+if __name__=='__main__':
+    app.run(debug=True)
