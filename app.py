@@ -8,7 +8,7 @@ api = Api(app)
 
 @app.route('/')
 def hello():
-    return 'Hellow orldddddd'
+    return 'Hellow orldddddd'+'Nothing mucjhhhhhh'
 
 
 #
@@ -45,7 +45,7 @@ def post_testing():
         "response": {
             "outputSpeech": {
                 "type": "PlainText",
-                "text": "Hello all, this is a sample text for testing purpose",
+                "text": "Hello praveen i am here checking ait alllll",
 
             },
             "card": {
